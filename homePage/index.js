@@ -65,7 +65,7 @@ export default class HomePage extends React.Component {
          {
              this.state.noteArray.length ?
              this.state.noteArray.map((data,i)=>(
-                 <Note date={Date()} note={data} keyVal={i}
+                 <Note date={Date()} note={data} keyVal={i} key={i}
                  deleteMethod ={()=>this.deleteNode(data)}
                   />
 
